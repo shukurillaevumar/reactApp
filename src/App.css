@@ -1,38 +1,115 @@
-.App {
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0px;
+  background-color: #0093E9;
+}
+
+.mainBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardQuoteOfTheDay {
+  margin-top: 200px;
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.cardQuoteOfTheDay button {
+  background-color: #0093E9;
   color: white;
+  padding: 10px 20px;
+  font-size: large;
+  border-radius: 20px;
+  border: 1px solid #0093E9;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.infoCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgb(117, 116, 116);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.infoCard i {
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: larger;
+  color: #0093E9;
+  border: 1px solid #0093E9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.infoCard div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.mainBoxOfSearch {
+  margin-top: 50px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.form input {
+  font-size: large;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid grey;
+}
+
+.form button {
+  background-color: green;
+  color: white;
+  border-radius: 12px;
+  border: 1px solid green;
+  padding: 10px;
+  font-size: large;
+}
+
+@media screen and (max-width: 900px) {
+  .cardQuoteOfTheDay {
+    margin-top: 100px;
+    width: 300px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
   }
 }
